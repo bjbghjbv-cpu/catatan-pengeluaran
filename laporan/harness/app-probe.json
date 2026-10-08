@@ -1,0 +1,81 @@
+{
+  "image": "C:\\Users\\setia\\Downloads\\struk_contoh.jpeg",
+  "cap": {
+    "confirmVisible": true,
+    "scanHint": "Struk terdeteksi & dipotong (tanpa pelurusan).",
+    "procStatus": "Membaca teks struk… 100% (0:10)",
+    "rawOcr": "N                       \\\n\nSBCA\n\n\\ GOOD FRIENDS HO\nPACIFIC GARDEN SQUARE\nGF NO 09-10 ALAN SUTERA\nTERME A2FBY6L 0       MERCH 000885003004138\n0821 +++ iga\nSUN BERNAT SETIAWAN\nIssuer: BCA\nBL FAN#O360001 4263349403560\nBPAYMENT QR Bri/rane 08 UCI 26 14:51\nWYOEBIT             BEP\nBBBATCH : 0019/4        WETRACE ND: 015523\n“REF.NO. 628114019222    APPR CODE 145156\npd RIS 327,903\n\nTOTAL           \\ Rp.77 000.\n|     ‘2% SIGNATURE NOT REQUIRED: mera.\n\nSANSO4218      \\      “*Cardholder Copy**\nAN#9360001430030041 36)\n\n",
+    "quad": null,
+    "scanW": 472,
+    "scanH": 624,
+    "upW": 2000,
+    "upH": 2644,
+    "formMerchant": "GOOD FRIENDS HO",
+    "formTanggal": "2026-10-08",
+    "formTotal": "77.000",
+    "formKategori": "LAINNYA",
+    "formItems": [
+      {
+        "nama": "",
+        "harga": ""
+      }
+    ],
+    "parsedWarp": {
+      "merchant": "GOOD FRIENDS HO",
+      "tanggal": "2026-10-08",
+      "items": [],
+      "total": 77000
+    },
+    "parseErr": null
+  },
+  "full": {
+    "dims": {
+      "w": 720,
+      "h": 1280
+    },
+    "fastDims": {
+      "w": 720,
+      "h": 1280
+    },
+    "prepDims": {
+      "w": 2000,
+      "h": 3556
+    },
+    "text": "N                       \\\n\nSBCA\n\n\\ GOOD FRIENDS HO\nPACIFIC GARDEN SQUARE\nGF NO 09-10 ALAN SUTERA\nTERME A2FBY6L 0       MERCH 000885003004138\n0821 +++ iga\nSUN BERNAT SETIAWAN\nIssuer: BCA\nBL FAN#O360001 4263349403560\nBPAYMENT QR Bri/rane 08 UCI 26 14:51\nWYOEBIT             BEP\nBBBATCH : 0019/4        WETRACE ND: 015523\n“REF.NO. 628114019222    APPR CODE 145156\npd RIS 327,903\n\nTOTAL           \\ Rp.77 000.\n|     ‘2% SIGNATURE NOT REQUIRED: mera.\n\nSANSO4218      \\      “*Cardholder Copy**\nAN#9360001430030041 36)\n\n",
+    "confidence": 58,
+    "nLines": 19,
+    "lines": [
+      "N                       \\\n\n",
+      "SBCA\n\n",
+      "\\ GOOD FRIENDS HO\n",
+      "PACIFIC GARDEN SQUARE\n",
+      "GF NO 09-10 ALAN SUTERA\n",
+      "TERME A2FBY6L 0       MERCH 000885003004138\n",
+      "0821 +++ iga\n",
+      "SUN BERNAT SETIAWAN\n",
+      "Issuer: BCA\n",
+      "BL FAN#O360001 4263349403560\n",
+      "BPAYMENT QR Bri/rane 08 UCI 26 14:51\n",
+      "WYOEBIT             BEP\n",
+      "BBBATCH : 0019/4        WETRACE ND: 015523\n",
+      "“REF.NO. 628114019222    APPR CODE 145156\n",
+      "pd RIS 327,903\n\n",
+      "TOTAL           \\ Rp.77 000.\n",
+      "|     ‘2% SIGNATURE NOT REQUIRED: mera.\n\n",
+      "SANSO4218      \\      “*Cardholder Copy**\n",
+      "AN#9360001430030041 36)\n\n"
+    ],
+    "parsed": {
+      "merchant": "GOOD FRIENDS HO",
+      "tanggal": "2026-10-08",
+      "items": [],
+      "total": 77000
+    }
+  },
+  "console": [
+    "[pipeline] mulai memproses foto",
+    "[pipeline] computer vision selesai dalam 2216 ms",
+    "[pipeline] mulai OCR",
+    "[pipeline] OCR selesai, panjang teks: 514 conf: 58"
+  ]
+}

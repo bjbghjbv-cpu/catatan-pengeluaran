@@ -1,0 +1,380 @@
+{
+  "source": "C:\\Users\\setia\\Downloads\\struk_contoh.jpeg",
+  "scan": "C:\\Users\\setia\\OneDrive\\ドキュメント\\Default Project\\laporan\\harness\\scan-preview.jpg",
+  "results": [
+    {
+      "cfg": {
+        "id": "scan_rot0_psm3",
+        "img": "scan",
+        "rot": 0,
+        "pre": "none",
+        "psm": "3"
+      },
+      "text": "",
+      "confidence": 95,
+      "ms": 98,
+      "w": 405,
+      "h": 579,
+      "hits": {
+        "77": 0,
+        "GOOD": 0,
+        "FRIENDS": 0,
+        "PACIFIC": 0,
+        "GARDEN": 0,
+        "SQUARE": 0,
+        "SUTERA": 0,
+        "BCA": 0,
+        "OCT": 0,
+        "77.000": 0,
+        "000885": 0,
+        "14:51": 0,
+        "TOTAL": 0,
+        "PAYMENT": 0
+      }
+    },
+    {
+      "cfg": {
+        "id": "scan_rot0_psm6",
+        "img": "scan",
+        "rot": 0,
+        "pre": "none",
+        "psm": "6"
+      },
+      "text": "| NES er”\n4  gt   ve 4\nee  .    A\nTar k   - 8.00   b\nFX   a PY  Faas\n\nTy JERS  tr  34519\na od NRC\n50  : Re\n0 3 N   4 RATINGS EN,\nmi WAY          “\npn    Ni\n\n\\         \\\n",
+      "confidence": 35,
+      "ms": 734,
+      "w": 405,
+      "h": 579,
+      "hits": {
+        "77": 0,
+        "GOOD": 0,
+        "FRIENDS": 0,
+        "PACIFIC": 0,
+        "GARDEN": 0,
+        "SQUARE": 0,
+        "SUTERA": 0,
+        "BCA": 0,
+        "OCT": 0,
+        "77.000": 0,
+        "000885": 0,
+        "14:51": 0,
+        "TOTAL": 0,
+        "PAYMENT": 0
+      }
+    },
+    {
+      "cfg": {
+        "id": "scan_rot90_psm6",
+        "img": "scan",
+        "rot": 90,
+        "pre": "none",
+        "psm": "6"
+      },
+      "text": "rn Sil\n5 /  Py  4   330.\n  Jee 29\n£ ap big     V7\nERAN\n| = 3% NX NS\n 48 ofl 2 Th 2h\n",
+      "confidence": 43,
+      "ms": 562,
+      "w": 579,
+      "h": 405,
+      "hits": {
+        "77": 0,
+        "GOOD": 0,
+        "FRIENDS": 0,
+        "PACIFIC": 0,
+        "GARDEN": 0,
+        "SQUARE": 0,
+        "SUTERA": 0,
+        "BCA": 0,
+        "OCT": 0,
+        "77.000": 0,
+        "000885": 0,
+        "14:51": 0,
+        "TOTAL": 0,
+        "PAYMENT": 0
+      }
+    },
+    {
+      "cfg": {
+        "id": "scan_rot270_psm6",
+        "img": "scan",
+        "rot": 270,
+        "pre": "none",
+        "psm": "6"
+      },
+      "text": "Ed A A\nON wa =     |\n\n1       3. ge FB      |\n\n3    x5 pp\n\nemp\nacs    AE Tan\n\n3,   ot ar\n\n.  — AE | vee <3  Y\n",
+      "confidence": 31,
+      "ms": 594,
+      "w": 579,
+      "h": 405,
+      "hits": {
+        "77": 0,
+        "GOOD": 0,
+        "FRIENDS": 0,
+        "PACIFIC": 0,
+        "GARDEN": 0,
+        "SQUARE": 0,
+        "SUTERA": 0,
+        "BCA": 0,
+        "OCT": 0,
+        "77.000": 0,
+        "000885": 0,
+        "14:51": 0,
+        "TOTAL": 0,
+        "PAYMENT": 0
+      }
+    },
+    {
+      "cfg": {
+        "id": "scan_rot270_psm3",
+        "img": "scan",
+        "rot": 270,
+        "pre": "none",
+        "psm": "3"
+      },
+      "text": "",
+      "confidence": 95,
+      "ms": 34,
+      "w": 579,
+      "h": 405,
+      "hits": {
+        "77": 0,
+        "GOOD": 0,
+        "FRIENDS": 0,
+        "PACIFIC": 0,
+        "GARDEN": 0,
+        "SQUARE": 0,
+        "SUTERA": 0,
+        "BCA": 0,
+        "OCT": 0,
+        "77.000": 0,
+        "000885": 0,
+        "14:51": 0,
+        "TOTAL": 0,
+        "PAYMENT": 0
+      }
+    },
+    {
+      "cfg": {
+        "id": "orig_rot0_psm3",
+        "img": "orig",
+        "rot": 0,
+        "pre": "none",
+        "psm": "3"
+      },
+      "text": "\\\n\n\\ GOOD FRIENDS HO\nPACIFIC GARDEN SQUARE\nGF NO 09-10 ALAN syTe\n TERME _42FBI6L0\n0821 ++ xargs\nSUN BERNAT SETIAWAN\n1       CA\n\n“TRACE ND: 01.525\nAPPR CODE 145156\n\n\\_Rp.77,000\n“24 SIGNATURE NOT REQUIRED: mane\n\noso          “Mardholder Copy”?\nPAN#O 360001 430030041385\n\n",
+      "confidence": 56,
+      "ms": 601,
+      "w": 720,
+      "h": 1280,
+      "hits": {
+        "77": 1,
+        "GOOD": 1,
+        "FRIENDS": 1,
+        "PACIFIC": 1,
+        "GARDEN": 1,
+        "SQUARE": 1,
+        "SUTERA": 0,
+        "BCA": 0,
+        "OCT": 0,
+        "77.000": 1,
+        "000885": 0,
+        "14:51": 0,
+        "TOTAL": 0,
+        "PAYMENT": 0
+      }
+    },
+    {
+      "cfg": {
+        "id": "orig_rot0_psm6",
+        "img": "orig",
+        "rot": 0,
+        "pre": "none",
+        "psm": "6"
+      },
+      "text": "x)    0\nN          \\\n=3             NE\n.— SEA\n(\nESRC\npF: ©        sl hy FRIENDS HO\nBS          CIFIC GARDEN SQUARE\n3\nKS        GF No 09-10 ALAN SUTERA\n TERM A2FBI6L0      MERCH 000885003004138\n0821 ++ xargs           »\nSUN BERNAT SETIAWAN\n—Issuer: BCA\nAkun IN MR\nPAYMENT QR  Broc/iune 08 UCI 26 14:51\nN08!             Aa\nPBBATCH : 0019/4       \"WATRACE ND: 015023\nNeo. 628114019425    APPR CODE 145156\nRI  gs 39759 103                          NN\nTOTAL              A Rp.77,000                 N\n| Sa tas SIGNATURE NOT REQUIRED mame         ND\n2                                            N\n3 SANSO4218            “Mcardholder Copy:           S\n32 SMPANA936000:430030141365                                       .             \\\n",
+      "confidence": 49,
+      "ms": 1288,
+      "w": 720,
+      "h": 1280,
+      "hits": {
+        "77": 1,
+        "GOOD": 0,
+        "FRIENDS": 1,
+        "PACIFIC": 0,
+        "GARDEN": 1,
+        "SQUARE": 1,
+        "SUTERA": 1,
+        "BCA": 1,
+        "OCT": 0,
+        "77.000": 1,
+        "000885": 1,
+        "14:51": 1,
+        "TOTAL": 1,
+        "PAYMENT": 1
+      }
+    },
+    {
+      "cfg": {
+        "id": "orig_rot0_psm4",
+        "img": "orig",
+        "rot": 0,
+        "pre": "none",
+        "psm": "4"
+      },
+      "text": "\\\n\nBCA\n\n\\ GOOD FRIENDS HO\nPACIFIC GARDEN SQUARE\nGF MO 09-10 ALAM SL7E\n\nTERM? _A2FBI6L0\n0821 ++ xargs\nSM “yl SERA\n\n“TRACE ND: 01.525\n140 Ni. 34       APPR CODE 145156\n\nRIS 327 50703\n\\ Rp.77, 400\n43% SIGNATURE NOT REGUIRED: mason.\n\n|\" SANSO4                          “Mardholder Copy**\nErr  430030141385\n\n",
+      "confidence": 53,
+      "ms": 741,
+      "w": 720,
+      "h": 1280,
+      "hits": {
+        "77": 1,
+        "GOOD": 1,
+        "FRIENDS": 1,
+        "PACIFIC": 1,
+        "GARDEN": 1,
+        "SQUARE": 1,
+        "SUTERA": 0,
+        "BCA": 1,
+        "OCT": 0,
+        "77.000": 0,
+        "000885": 0,
+        "14:51": 0,
+        "TOTAL": 0,
+        "PAYMENT": 0
+      }
+    },
+    {
+      "cfg": {
+        "id": "orig_gray2x_psm6",
+        "img": "orig",
+        "rot": 0,
+        "pre": "gray2x",
+        "psm": "6"
+      },
+      "text": "nd\n>                                                   3\nhy\nDI   |\n\"   {\n. =~         |                                            ”\nNS   bh.        4            f         q                              - =\nRN |          + BCA               a.\n. 8          GOOD FRYENDS HO\nJ        BS         PACIFIC GARDEN SQUARE\n       KS       GF NO 09 10 ALAM SUTERA\nha TERME _AZFBY6L 0      MERCH 000885003004138\nNa  0821 F*xx4 “85\nN        SUN BERNAT SETIAWAN\n|       Issuer: BCA\n\\          PLPANRO360001426234940350\n.     BB PAYMENT OR Dmg/rire 08 OLI 26 14\n        DEBIT\nS      BBBATCH : 0019/4         TRACE NU   3323\nREF.NO. 62814017342    APPR {ODE 14515\n      RRNWQRIS 32759703\nTOTAL.                  Kp. 77,000\n+     ‘»# SIGNATURE NOT REQUIRED» me\nRe\n3         ANS04218            “*Cardholder Copy**\n9 “die Pi  1001430030041 38\n.                                AAN Ama\nXN\n",
+      "confidence": 50,
+      "ms": 1975,
+      "w": 1440,
+      "h": 2560,
+      "hits": {
+        "77": 1,
+        "GOOD": 1,
+        "FRIENDS": 0,
+        "PACIFIC": 1,
+        "GARDEN": 1,
+        "SQUARE": 1,
+        "SUTERA": 1,
+        "BCA": 2,
+        "OCT": 0,
+        "77.000": 1,
+        "000885": 1,
+        "14:51": 0,
+        "TOTAL": 1,
+        "PAYMENT": 1
+      }
+    },
+    {
+      "cfg": {
+        "id": "orig_otsu_psm3",
+        "img": "orig",
+        "rot": 0,
+        "pre": "otsu",
+        "psm": "3"
+      },
+      "text": "& BCA\nDuly FRIEND: HO\n\nz          PRUE IE GARDEN SN JARE\n3       GF MU 09 1 ALAM ti rEBA\nSS ERME AZMBYuLY\nNG2p Maxi ga\nSUN BERNAT SLTTAWAN\nlssust: uth\nPANGOJUISONL 95 ava 330\nPAYMENT ap\n\nCSUR NOT RO LRED\n\n5   CHC dinda edan\n& BRR SOL id\n\nE\n\nHERLE BUSUI)\n\nFATA TTT a\n\nAPPR (fl AMI\n\n3\n\nap. dT egh\n\nANSO4Z TE              sla dhodder Copy” '\n\n",
+      "confidence": 40,
+      "ms": 1252,
+      "w": 720,
+      "h": 1280,
+      "hits": {
+        "77": 0,
+        "GOOD": 0,
+        "FRIENDS": 0,
+        "PACIFIC": 0,
+        "GARDEN": 1,
+        "SQUARE": 0,
+        "SUTERA": 0,
+        "BCA": 1,
+        "OCT": 0,
+        "77.000": 0,
+        "000885": 0,
+        "14:51": 0,
+        "TOTAL": 0,
+        "PAYMENT": 1
+      }
+    },
+    {
+      "cfg": {
+        "id": "orig_otsu_psm6",
+        "img": "orig",
+        "rot": 0,
+        "pre": "otsu",
+        "psm": "6"
+      },
+      "text": "“3                                    .\nNg\nTR\nBY                                          h\n.         :          ob) ECA               CNR\n.         5         GbuD FRIEND: HD\n>        B3        PAUIR 1 GARDEN Sy rane\nSA       GF MG Uy 20 ALAM SUTERA\nI ERMG AZBYuty      HERE HUBLI = dn\nBl          Ng2p enw gy\nN         SUN BERNAT SLTTAWAN\n_lssuer: ul\nPANBOBLL0IL 905 240 130           .\nB9 PAEYMENG ab som os on oi\n~         DEBIT                   .\nBATCH UL ug        TRACE ND © Ly\nREF HG wii, o-oo     APPR Lh adhi\nRAN GRIS oo ps            .\nOTH.                  ap. RABU\nCURVED NUT ROGIREY ¢\nR       ANS047 IE         “Cardholder Supri\niS\n3                               Re me 4\n_\n",
+      "confidence": 33,
+      "ms": 1476,
+      "w": 720,
+      "h": 1280,
+      "hits": {
+        "77": 0,
+        "GOOD": 0,
+        "FRIENDS": 0,
+        "PACIFIC": 0,
+        "GARDEN": 1,
+        "SQUARE": 0,
+        "SUTERA": 1,
+        "BCA": 0,
+        "OCT": 0,
+        "77.000": 0,
+        "000885": 0,
+        "14:51": 0,
+        "TOTAL": 0,
+        "PAYMENT": 0
+      }
+    },
+    {
+      "cfg": {
+        "id": "orig_adaptive_psm6",
+        "img": "orig",
+        "rot": 0,
+        "pre": "adaptive",
+        "psm": "6"
+      },
+      "text": "SL    1 BERET aa\nNE    & IN SO =   ~~ “So  a\nOi .     3  NY Lo NS  a Te NY\n~     ws  DAN  NE\na.        BA    NG SoTL\nOR 3 AANG NN ~\nNOH HAN NE a\nRU § FOR\nNON CN\nNH | RRR\n.    NE   “\nNN   A      ry      ~          .    )\nYO HE Naba   an\nNa     : PY. Are FRIES Wx a          Co\nSg              GARDEN        -   J\n.      g 1   GF ND 09-10 ALAN Serica — NC\n|        TERNS A2POVGLIN    MERCA bo    EE EN\nN    et Aa    -    SE\n   SUN BERVAT SEMAHAN Ta   (     NEN\niN    Asus: BCA Sy   -     NS  YN,\nwo  ; Fish 910350 rg Tot  J Ts\nNS     PAYMENT OR, ie) 08 0L126 44:81      NG\nSF mr «PPA |    AN    ON\nON       BATCH : 008074} © “Neaiite ND: 010525     NN N\nNP A eM, 628i ag, APPR CODE 145156 2 BK       N\nOR   in SES th {s    .      \\   NN\n“KE TOIMTS NERA SR. 77,090  ND AN\nTRH tt A T REGTIRED vg   NCE\nCB REN IE CE   NN\nIi : EH 1der Copy RR  NI )\n5    A#936000143003     NN.       SN  NS\ni WN AA Nb ~ IAIN\n1.   bu         .        TR NS\nNN\n:      g     CONOR RO NN\nNEI RYN NE\nNC NN TEN\nSS NN an TES\n.   NON\nN   .   AUTON\nBON EEN\n8 ION NN\n~  ~ NA NY\n",
+      "confidence": 34,
+      "ms": 4265,
+      "w": 720,
+      "h": 1280,
+      "hits": {
+        "77": 1,
+        "GOOD": 0,
+        "FRIENDS": 0,
+        "PACIFIC": 0,
+        "GARDEN": 1,
+        "SQUARE": 0,
+        "SUTERA": 0,
+        "BCA": 1,
+        "OCT": 0,
+        "77.000": 0,
+        "000885": 0,
+        "14:51": 0,
+        "TOTAL": 0,
+        "PAYMENT": 1
+      }
+    }
+  ],
+  "logs": [
+    "[tess] 0",
+    "[tess] 0.4142857142857143",
+    "[tess] 0.6714285714285714",
+    "[tess] 0.15714285714285714",
+    "[tess] 0.08571428571428572",
+    "[tess] 0.4857142857142857",
+    "[tess] 0.11428571428571428",
+    "[tess] 0.21428571428571427",
+    "[tess] 0.5",
+    "[tess] 0.6571428571428571",
+    "[tess] 0",
+    "[tess] 0.7"
+  ]
+}

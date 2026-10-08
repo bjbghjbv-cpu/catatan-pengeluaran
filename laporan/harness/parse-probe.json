@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ideal-groundtruth",
+    "parsed": {
+      "merchant": "GOOD FRIENDS-HD",
+      "tanggal": "2026-10-08",
+      "items": [],
+      "total": 77000
+    },
+    "dateCheck": "2026-10-08"
+  },
+  {
+    "name": "fast-mode-real",
+    "parsed": {
+      "merchant": "GOOD FRIENDS HO",
+      "tanggal": "2026-10-08",
+      "items": [],
+      "total": 77000
+    },
+    "dateCheck": "2026-10-08"
+  },
+  {
+    "name": "warp-real",
+    "parsed": {
+      "merchant": "GOOD FRIENDS HO",
+      "tanggal": "2026-10-08",
+      "items": [],
+      "total": 77000
+    },
+    "dateCheck": "2026-10-08"
+  }
+]

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B0B0B">
+  <title>Catatan Pengeluaran Bulanan</title>
+  <meta name="description" content="Aplikasi pencatat pengeluaran bulanan dengan pemindaian struk via kamera, computer vision, dan OCR di perangkat.">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital@1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <button class="wordmark" id="btnWordmark" aria-label="Ke beranda">catatan pengeluaran<span class="wordmark-dot"></span></button>
+    <nav class="header-nav" aria-label="Navigasi utama">
+      <button class="chip is-active" id="navBeranda">BERANDA</button>
+      <button class="chip" id="navRingkasan">RINGKASAN</button>
+    </nav>
+    <button class="btn-icon" id="btnCameraHeader" aria-label="Ambil foto struk" title="Ambil foto struk">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v12H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+    </button>
+  </header>
+
+  <!-- ================= BERANDA ================= -->
+  <main id="viewBeranda">
+
+    <section class="hero">
+      <div class="wrap">
+        <span class="badge badge-dark">TOTAL BULAN INI</span>
+        <div class="hero-total" id="heroTotal">Rp 0</div>
+        <h1 class="hero-title">PENGELUARAN <em class="serif-hl">bulan ini.</em></h1>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lime" id="btnCaptureHero">
+            <span class="btn-label">AMBIL FOTO</span>
+            <span class="btn-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg>
+            </span>
+          </button>
+          <button class="btn btn-ghost btn-ghost-dark" id="btnManualHero">TAMBAH MANUAL</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="month-nav">
+        <button class="btn-icon" id="monthPrev" aria-label="Bulan sebelumnya" title="Bulan sebelumnya">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6l-6 6 6 6"/></svg>
+        </button>
+        <div class="month-mid">
+          <span class="badge">TRANSAKSI</span>
+          <h2 class="month-title" id="monthTitle">—</h2>
+        </div>
+        <button class="btn-icon" id="monthNext" aria-label="Bulan berikutnya" title="Bulan berikutnya">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <ul class="txn-list" id="txnList"></ul>
+
+      <div class="empty-state hidden" id="emptyState">
+        <p>belum ada <em>pengeluaran.</em></p>
+        <button class="btn btn-ghost" id="btnEmptyAdd">+ TAMBAH PENGELUARAN</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= RINGKASAN ================= -->
+  <main id="viewRingkasan" class="hidden">
+
+    <section class="section">
+      <span class="badge">RINGKASAN</span>
+      <h1 class="page-title">RINGKASAN <em class="serif-hl">bulan ini.</em></h1>
+
+      <div class="month-nav month-nav-top">
+        <button class="btn-icon" id="monthPrevR" aria-label="Bulan sebelumnya" title="Bulan sebelumnya">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6l-6 6 6 6"/></svg>
+        </button>
+        <div class="month-mid">
+          <h2 class="month-title" id="monthTitleR">—</h2>
+        </div>
+        <button class="btn-icon" id="monthNextR" aria-label="Bulan berikutnya" title="Bulan berikutnya">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <div class="summary-total">
+        <div class="summary-total-num" id="summaryTotal">Rp 0</div>
+        <div class="summary-total-meta" id="summaryMeta">0 transaksi</div>
+      </div>
+
+      <div class="cat-list" id="catList"></div>
+    </section>
+
+    <section class="section">
+      <span class="badge">DATA & PENGATURAN</span>
+      <h2 class="section-title">KELOLA <em class="serif-hl">data.</em></h2>
+      <div class="data-actions">
+        <button class="btn btn-ghost" id="btnExportCSV">EKSPOR CSV ↓</button>
+        <button class="btn btn-ghost" id="btnExportJSON">EKSPOR JSON ↓</button>
+        <button class="btn btn-ghost" id="btnImportJSON">IMPOR JSON ↑</button>
+      </div>
+      <p class="hint">Data tersimpan lokal di browser ini (localStorage) — tetap ada setelah halaman ditutup.</p>
+    </section>
+
+    <section class="section">
+      <span class="badge">MODE OCR CLOUD (OPSIONAL)</span>
+      <h2 class="section-title">OCR <em class="serif-hl">cloud.</em></h2>
+      <p class="hint">Tanpa kunci API, OCR berjalan penuh di perangkat (Tesseract — gratis, tanpa akun). Tambahkan kunci API bila ingin akurasi lebih tinggi.</p>
+      <div class="cloud-row">
+        <select class="input" id="cloudProvider" aria-label="Penyedia OCR cloud">
+          <option value="none">TESSERACT LOKAL (BAWAAN)</option>
+          <option value="google">GOOGLE CLOUD VISION</option>
+          <option value="azure">AZURE COMPUTER VISION</option>
+          <option value="aws" disabled>AWS TEXTRACT — PERLU BACKEND</option>
+        </select>
+        <input class="input hidden" id="cloudEndpoint" placeholder="Endpoint Azure — https://…" aria-label="Endpoint Azure">
+        <input class="input" id="cloudKey" placeholder="API key" aria-label="Kunci API">
+        <button class="btn btn-ghost" id="btnSaveCloud">SIMPAN</button>
+      </div>
+      <p class="hint hint-small" id="cloudStatus"></p>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>● DATA TERSIMPAN LOKAL</span>
+      <span>CATATAN PENGELUARAN © 2026</span>
+    </div>
+  </footer>
+
+  <!-- ================= OVERLAY: AMBIL FOTO & KONFIRMASI ================= -->
+  <div class="overlay hidden" id="captureOverlay">
+    <div class="overlay-bar">
+      <span class="badge" id="captureStepLabel">LANGKAH 1 — FOTO</span>
+      <button class="btn-icon" id="btnCaptureClose" aria-label="Tutup">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <!-- Tahap 1: pilih sumber foto -->
+    <div class="stage" id="stagePick">
+      <div class="stage-inner">
+        <h1 class="stage-title">AMBIL FOTO <em class="serif-hl">struk.</em></h1>
+        <p class="stage-sub">Potret struk langsung dari kamera — aplikasi mendeteksi, meluruskan, memotong, lalu membaca isinya secara otomatis. Tidak ada yang diunggah ke server.</p>
+        <div class="pick-actions">
+          <button class="btn btn-primary" id="btnTakePhoto">
+            <span class="btn-label">AMBIL FOTO</span>
+            <span class="btn-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg>
+            </span>
+          </button>
+          <div class="pick-secondary">
+            <button class="btn btn-ghost" id="btnLiveCam">KAMERA LIVE</button>
+            <button class="btn btn-ghost" id="btnGallery">PILIH DARI GALERI</button>
+          </div>
+          <button class="chip" id="btnFastMode" type="button" title="Lewati deteksi & pelurus struk — untuk perangkat lambat">MODE CEPAT — TANPA PELURUS STRUK</button>
+        </div>
+        <div class="dropzone" id="dropzone">
+          <p>atau <em>seret &amp; lepas</em> foto struk di sini</p>
+          <span class="dropzone-hint">JPG · PNG · PDF</span>
+        </div>
+        <p class="stage-note">● Kamera butuh izin &amp; koneksi aman (HTTPS / localhost).<br>● Foto diproses di perangkat kamu — tidak dikirim ke mana pun (kecuali mode cloud yang kamu aktifkan sendiri).</p>
+      </div>
+    </div>
+
+    <!-- Tahap 2: kamera live -->
+    <div class="stage hidden" id="stageLive">
+      <div class="cam-wrap">
+        <div class="cam-viewport"><video id="camVideo" playsinline muted autoplay></video></div>
+        <p class="stage-sub stage-sub-center">Bidik struk sampai terlihat utuh, lalu tekan tombol bidik.</p>
+        <div class="cam-controls">
+          <button class="btn btn-ghost" id="btnLiveCancel">BATAL</button>
+          <button class="shutter" id="btnShutter" aria-label="Ambil foto" title="Ambil foto"></button>
+          <span class="cam-controls-spacer"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tahap 3: memproses -->
+    <div class="stage hidden" id="stageProcess">
+      <div class="split">
+        <div class="split-preview">
+          <span class="badge badge-dark">PREVIEW FOTO</span>
+          <div class="frame"><img id="procPreview" alt="Pratinjau foto struk"></div>
+        </div>
+        <div class="split-panel">
+          <span class="badge">MEMPROSES STRUK</span>
+          <h2 class="panel-title">SEDANG <em class="serif-hl">membaca.</em></h2>
+          <ul class="steps">
+            <li class="step" id="stepDetect"><span class="dot"></span>MENDETEKSI STRUK</li>
+            <li class="step" id="stepOcr"><span class="dot"></span>MEMBACA STRUK <span class="step-pct" id="ocrProgress"></span></li>
+          </ul>
+          <div class="proc-status-row">
+            <span class="proc-spinner" aria-hidden="true"></span>
+            <p class="hint" id="procStatus">Menyiapkan…</p>
+          </div>
+          <div class="proc-bar"><div class="proc-bar-fill" id="procBarFill"></div></div>
+          <p class="hint">Pemrosesan berjalan di perangkat. Pertama kali butuh internet (unduhan sekali saja) — berikutnya jauh lebih cepat. Jika browser menampilkan jendela "Page Unresponsive", pilih Wait / Tunggu — ini normal saat mesin pertama kali disiapkan.</p>
+          <button class="btn btn-ghost" id="btnSkipScan" type="button">LEWATI — ISI MANUAL</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tahap 4: konfirmasi -->
+    <div class="stage hidden" id="stageConfirm">
+      <div class="split">
+        <div class="split-preview">
+          <span class="badge badge-dark">HASIL SCAN</span>
+          <div class="frame"><img id="scanPreview" alt="Hasil scan struk yang diluruskan"></div>
+          <p class="hint-dark" id="scanHint"></p>
+          <span class="badge badge-dark">FOTO ASLI</span>
+          <div class="frame">
+            <div class="frame-inner">
+              <img id="origPreview" alt="Foto struk asli dengan area terdeteksi">
+              <svg id="quadOverlay" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+            </div>
+          </div>
+          <button class="btn btn-ghost btn-ghost-dark" id="btnRetake">← AMBIL ULANG</button>
+        </div>
+        <div class="split-panel">
+          <span class="badge">KONFIRMASI DATA</span>
+          <h2 class="panel-title">PERIKSA <em class="serif-hl">hasil bacaan.</em></h2>
+          <p class="hint" id="ocrNotice"></p>
+          <div id="confirmFormWrap"></div>
+          <details class="raw-ocr">
+            <summary>LIHAT TEKS MENTAH OCR</summary>
+            <pre id="rawOcr"></pre>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: EDIT / HAPUS / MANUAL ================= -->
+  <div class="modal hidden" id="editModal">
+    <div class="modal-backdrop" id="editModalBackdrop"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Form transaksi">
+      <div class="modal-bar">
+        <span class="badge" id="editModalTitle">EDIT TRANSAKSI</span>
+        <button class="btn-icon" id="btnEditClose" aria-label="Tutup">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div id="editFormWrap"></div>
+    </div>
+  </div>
+
+  <!-- ================= INPUT TERSEMBUNYI ================= -->
+  <input type="file" id="inputCamera" class="hidden" accept="image/*" capture="environment">
+  <input type="file" id="inputGallery" class="hidden" accept="image/*,application/pdf">
+  <input type="file" id="importInput" class="hidden" accept="application/json,.json">
+
+  <!-- ================= TOAST ================= -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript><p style="padding:24px;font-family:sans-serif;">Aplikasi ini memerlukan JavaScript.</p></noscript>
+
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/vision.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

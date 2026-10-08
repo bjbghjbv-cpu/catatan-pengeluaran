@@ -1,0 +1,6 @@
+[console.info] [pipeline] mulai memproses foto
+[console.info] [pipeline] computer vision selesai dalam 2267 ms
+[console.info] [pipeline] mulai OCR
+[log.warning] Detected 91 diacritics
+[log.warning] Detected 94 diacritics
+[console.info] [pipeline] OCR selesai, panjang teks: 514 conf: 58

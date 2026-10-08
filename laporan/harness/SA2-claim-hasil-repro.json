@@ -1,0 +1,35 @@
+{
+  "appUrl": "http://localhost:8080/",
+  "image": "C:\\Users\\setia\\Downloads\\struk_contoh.jpeg",
+  "imageBytes": 96006,
+  "finishedAt": "2026-10-08T13:50:21.746Z",
+  "snapshot": {
+    "confirmVisible": true,
+    "processVisible": false,
+    "procStatus": "Membaca ulang dengan kontras diperbaiki… (0:08)",
+    "scanHint": "Struk terdeteksi, diluruskan & dipotong otomatis.",
+    "ocrNotice": "",
+    "rawOcr": "FR Let\nfh SA)\n\n7 Neo -\n\n1 x A 4\nLr y\n\n” ¢ A\n\nTor rg DS?\n\n1 Y : > 1 L550\nhe = , a) Tr\nv LY 1h oR 145\n\n. pid » as . N ol\nWLR ‘ 5 ho\nrw. nu » “Re-T »\n\n[0 ~\\ IN 3 XN & iN\nAN w Co\n) ANT \\\n\nPE hea COR 383 |\n\nAW hu\" |\n| “ | n NA\n",
+    "merchant": "FR Let",
+    "tanggal": "2026-10-08",
+    "total": "",
+    "kategori": "LAINNYA",
+    "items": [
+      {
+        "nama": "1 Y : > 1 L",
+        "harga": "550"
+      },
+      {
+        "nama": "v LY 1h oR",
+        "harga": "145"
+      }
+    ],
+    "scanPreview": "data:image/png;base64,iVBORw0K"
+  },
+  "console": [
+    "[console.info] [pipeline] mulai memproses foto",
+    "[console.info] [pipeline] computer vision selesai dalam 1411 ms",
+    "[console.info] [pipeline] mulai OCR",
+    "[console.info] [pipeline] OCR selesai, panjang teks: 222 conf: 38"
+  ]
+}

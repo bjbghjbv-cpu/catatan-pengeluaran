@@ -1,0 +1,33 @@
+{
+  "appUrl": "http://localhost:8080/",
+  "image": "C:\\Users\\setia\\Downloads\\struk_contoh.jpeg",
+  "imageBytes": 96006,
+  "finishedAt": "2026-10-08T14:08:14.098Z",
+  "snapshot": {
+    "confirmVisible": true,
+    "processVisible": false,
+    "procStatus": "Membaca teks struk… 100% (0:10)",
+    "scanHint": "Struk terdeteksi & dipotong (tanpa pelurusan).",
+    "ocrNotice": "",
+    "rawOcr": "N                       \\\n\nSBCA\n\n\\ GOOD FRIENDS HO\nPACIFIC GARDEN SQUARE\nGF NO 09-10 ALAN SUTERA\nTERME A2FBY6L 0       MERCH 000885003004138\n0821 +++ iga\nSUN BERNAT SETIAWAN\nIssuer: BCA\nBL FAN#O360001 4263349403560\nBPAYMENT QR Bri/rane 08 UCI 26 14:51\nWYOEBIT             BEP\nBBBATCH : 0019/4        WETRACE ND: 015523\n“REF.NO. 628114019222    APPR CODE 145156\npd RIS 327,903\n\nTOTAL           \\ Rp.77 000.\n|     ‘2% SIGNATURE NOT REQUIRED: mera.\n\nSANSO4218      \\      “*Cardholder Copy**\nAN#9360001430030041 36)\n\n",
+    "merchant": "GOOD FRIENDS HO",
+    "tanggal": "2026-10-08",
+    "total": "77.000",
+    "kategori": "LAINNYA",
+    "items": [
+      {
+        "nama": "",
+        "harga": ""
+      }
+    ],
+    "scanPreview": "data:image/png;base64,iVBORw0K"
+  },
+  "console": [
+    "[console.info] [pipeline] mulai memproses foto",
+    "[console.info] [pipeline] computer vision selesai dalam 2267 ms",
+    "[console.info] [pipeline] mulai OCR",
+    "[log.warning] Detected 91 diacritics",
+    "[log.warning] Detected 94 diacritics",
+    "[console.info] [pipeline] OCR selesai, panjang teks: 514 conf: 58"
+  ]
+}
