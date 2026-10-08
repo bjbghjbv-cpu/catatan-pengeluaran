@@ -1,4 +1,4 @@
-# Catatan Pengeluaran Bulanan — Expense Tracker dengan Pemindai Struk
+Catatan Pengeluaran Bulanan — Expense Tracker dengan Pemindai Struk
 
 > **Aplikasi web pencatat pengeluaran bulanan** berbahasa Indonesia dengan fitur utama **pemindaian struk dari kamera** — deteksi struk, pelurusan perspektif, dan pembacaan teks (OCR) berjalan **sepenuhnya di perangkat** (tanpa API key, tanpa upload).
 
